@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+.d3-component {
+  background-color: #010852;
+}
+
+#tooltip {
+  border: 1px solid #333;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+.map-container {
+  position: relative;
+}
+
+.TotalMeteorites,
+.AverageMass {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white background */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.TotalMeteorites {
+  top: 10px;
+  left: 10px;
+}
+
+.AverageMass {
+  top: 10px;
+  right: 10px;
+}
+.map-container {
+  position: relative;
+  margin-top: -20px;
+}
+
+.card {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* adjust as needed */
+  background-color: rgba(255, 255, 255, 0.9); /* less transparent white background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* more pronounced shadow */
+  margin: 0 10px; /* add some horizontal margin */
+  font-size: 23px;
+}
+
+.card:first-child {
+  transform: translateX(calc(-50% - 120px)); /* adjust as needed */
+}
+
+.card:last-child {
+  transform: translateX(calc(-50% + 120px)); /* adjust as needed */
+}
+
+.card-container {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 400px; /* adjust as needed */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  color: #212529;
+  text-align: center;
+  padding: 10px 0;
+}
