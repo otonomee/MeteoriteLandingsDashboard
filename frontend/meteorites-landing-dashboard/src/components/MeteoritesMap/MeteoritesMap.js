@@ -13,7 +13,7 @@ function MeteoritesMap() {
 
   useEffect(() => {
     axios
-      .get("/meteorites_with_coordinates")
+      .get("https://meteorite-landings-api-2f4393d17f04.herokuapp.com/meteorites_with_coordinates")
       .then((response) => {
         setData(response.data);
       })

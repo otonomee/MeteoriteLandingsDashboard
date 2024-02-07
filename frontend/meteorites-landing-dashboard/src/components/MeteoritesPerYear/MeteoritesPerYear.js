@@ -9,7 +9,7 @@ function MeteoritesPerYear() {
 
   useEffect(() => {
     axios
-      .get("/meteorites_per_year")
+      .get("https://meteorite-landings-api-2f4393d17f04.herokuapp.com/meteorites_per_year")
       .then((response) => {
         setData(response.data);
       })

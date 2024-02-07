@@ -7,7 +7,7 @@ function TotalMeteorites() {
 
   useEffect(() => {
     axios
-      .get("/total_meteorites")
+      .get("https://meteorite-landings-api-2f4393d17f04.herokuapp.com/total_meteorites")
       .then((response) => {
         setTotal(response.data.total);
       })

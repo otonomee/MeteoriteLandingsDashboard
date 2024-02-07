@@ -7,7 +7,7 @@ function AverageMass() {
 
   useEffect(() => {
     axios
-      .get("/average_mass")
+      .get("https://meteorite-landings-api-2f4393d17f04.herokuapp.com/average_mass")
       .then((response) => {
         setAverageMass(response.data.average_mass);
       })
