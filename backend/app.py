@@ -2,8 +2,11 @@ from flask import Flask, jsonify
 import sqlite3
 import pandas as pd
 from ast import literal_eval
-app = Flask(__name__)
+from flask_cors import CORS
 
+app = Flask(__name__)
+CORS(app)
+#add
 def query_db(query, args=(), one=False):
     con = sqlite3.connect('meteorites.db')
     cur = con.execute(query, args)
